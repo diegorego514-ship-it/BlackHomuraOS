@@ -5,7 +5,15 @@
   <title>BlackHomuraOS</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script src="matrix.js"></script>
+
 <body>
+  <canvas id="matrix-bg"></canvas>
+
+  <div class="poetic-banner">
+    <span id="poetic-text">🧵 Weaving your destiny</span>
+  </div>
+
   <header>
     <img src="logo.png" alt="BlackHomuraOS Spiral Logo" class="logo">
     <h1>🌀 Awakening the timeline…</h1>
@@ -24,18 +32,40 @@
     <h2>Recursos</h2>
     <ul>
       <li><a href="https://github.com/diegorego514-ship-it/BlackHomuraOS">Repositório no GitHub</a></li>
-      <li><a href="#">Download da ISO</a></li>
       <li><a href="#">Guia de instalação</a></li>
     </ul>
-  </section>
+    <div class="download">
+    <a href="https://github.com/diegorego514-ship-it/BlackHomuraOS/releases/download/v1.0/BlackHomuraOS-v1.iso" class="btn-download">
+  ⬇️ Baixar ISO
+  </a>
+   </div>
+     </section>
 
   <section class="screenshots">
     <h2>Screenshots</h2>
-    <p>Em breve: imagens do boot, terminal e desktop.</p>
+    <div class="gallery">
+      <img src="plymouth/logo.png" alt="Boot logo">
+      <img src="plymouth/blackhomuraos.plymouth" alt="Plymouth config" class="code-preview">
+    </div>
   </section>
 
   <footer>
     <p>Feito por Diego Rego. Licença GPL-3.0.</p>
   </footer>
+
+  <script>
+    const phrases = [
+      "🧵 Weaving your destiny",
+      "🌀 Control the chaos",
+      "⏳ Rewrite the timeline",
+      "🕰️ Even time bends to your will"
+    ];
+    let index = 0;
+    setInterval(() => {
+      document.getElementById("poetic-text").textContent = phrases[index];
+      index = (index + 1) % phrases.length;
+    }, 4000);
+  </script>
+<script src="matrix.js"></script>
 </body>
 </html>
