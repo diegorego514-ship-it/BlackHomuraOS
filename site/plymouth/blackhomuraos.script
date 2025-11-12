@@ -1,0 +1,8 @@
+wallpaper_image = Image("logo.png");
+wallpaper_sprite = Sprite(wallpaper_image);
+wallpaper_sprite.SetPosition(ScreenWidth/2, ScreenHeight/2);
+wallpaper_sprite.SetOpacity(1.0);
+
+message = "Awakening the timeline...";
+text_sprite = Sprite(Text(message));
+text_sprite.SetPosition(ScreenWidth/2, ScreenHeight*0.8);

@@ -1,0 +1,57 @@
+body {
+  background-color: #0b0b0b;
+  color: #ff00cc;
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  animation: glitch 2s infinite;
+}
+
+.manifesto, .resources, .screenshots {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #ffffff;
+  border-bottom: 1px solid #ff00cc;
+  padding-bottom: 10px;
+}
+
+a {
+  color: #ff00cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+/* Glitch animation */
+@keyframes glitch {
+  0% { text-shadow: 2px 0 magenta; }
+  50% { text-shadow: -2px 0 cyan; }
+  100% { text-shadow: 2px 0 magenta; }
+}
