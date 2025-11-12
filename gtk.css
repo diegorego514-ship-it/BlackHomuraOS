@@ -1,0 +1,13 @@
+@define-color bg_color #0b0b0b;
+@define-color fg_color #ff00cc;
+
+window {
+  background-color: @bg_color;
+  color: @fg_color;
+}
+
+button {
+  background-color: @fg_color;
+  color: @bg_color;
+  border-radius: 4px;
+}

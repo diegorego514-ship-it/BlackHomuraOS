@@ -1,0 +1,12 @@
+set $mod Mod4
+font pango:Fira Code 12
+
+# Cores BlackHomuraOS
+client.focused          #ff00cc #ff00cc #0b0b0b #ff00cc
+client.unfocused        #222222 #222222 #888888 #222222
+
+# Atalhos
+bindsym $mod+Return exec alacritty
+bindsym $mod+d exec thunar
+bindsym $mod+Shift+q kill
+bindsym $mod+Shift+e exec notify-send "Control the chaos. Rewrite the timeline."

@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=BlackHomuraOS
+Description=Control the chaos. Rewrite the timeline.
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/blackhomuraos
+ScriptFile=blackhomuraos.script

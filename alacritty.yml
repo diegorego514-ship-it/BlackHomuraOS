@@ -1,0 +1,13 @@
+font:
+  normal:
+    family: Fira Code
+    style: Regular
+  size: 12.0
+
+colors:
+  primary:
+    background: '0x0b0b0b'
+    foreground: '0xff00cc'
+  cursor:
+    text: '0x0b0b0b'
+    cursor: '0xff00cc'
